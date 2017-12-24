@@ -1,0 +1,45 @@
+.user {
+  &__sign-up {
+    @include font-set(700, 12px, 32px);
+
+    display: block;
+    min-height: 32px;
+    margin-right: 10px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__log-in {
+    @include font(15px, 30px);
+
+    box-sizing: border-box;
+    display: block;
+    min-height: 50px;
+    padding: 10px;
+  }
+}
+
+@include MQ(L) {
+  .user {
+    @include font(0, 0);
+
+    margin-left: auto;
+
+    &__sign-up {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      vertical-align: top;
+    }
+
+    &__log-in {
+      display: inline-block;
+
+      vertical-align: top;
+    }
+  }
+}

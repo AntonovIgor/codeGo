@@ -1,0 +1,54 @@
+.page-header {
+  color: $sixth-color;
+
+  &__wrap {
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+
+    width: 38px;
+    height: 28px;
+
+    cursor: pointer;
+
+    &::before {
+      @include absolute-pseudo-element;
+
+      left: 50%;
+      top: 50%;
+
+      width: 18px;
+      height: 2px;
+
+      background-color: $sixth-color;
+      box-shadow: 0 -5px 0 $sixth-color,
+                  0 5px 0 $sixth-color;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@include MQ(L) {
+  .page-header {
+    &__wrap {
+      display: flex;
+      width: 100%;
+      max-width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-bottom: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}
