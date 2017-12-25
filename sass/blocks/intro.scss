@@ -27,6 +27,10 @@
     font-family: $font-secondary;
     text-align: center;
   }
+
+  &__btn {
+    width: 250px;
+  }
 }
 
 @include MQ(L) {
