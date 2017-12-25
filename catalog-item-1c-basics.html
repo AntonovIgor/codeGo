@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodeGo | Node.js. Основы</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/polyfills/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrap">
+      <a class="logo">
+        CodeGo
+      </a>
+      <button class="page-header__toggle  page-header__toggle--nojs" type="button"></button>
+      <nav class="main-nav  main-nav--nojs">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Как проходят занятия</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О проекте</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Лекторы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Курсы</a>
+            <ul class="main-nav__sub-list">
+              <li class="main-nav__sub-item">
+                <a class="main-nav__sub-link">1С:Предприятие 8.3. Основы</a>
+              </li>
+              <li class="main-nav__sub-item">
+                <a class="main-nav__sub-link" href="catalog-item-1c-skd.html">1С:Предприятие 8.3. СКД</a>
+              </li>
+              <li class="main-nav__sub-item">
+                <a class="main-nav__sub-link" href="catalog-item-nodejs.html">Node.js. Основы</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="user">
+        <a class="user__sign-up" href="">Зарегистрироваться</a>
+        <a class="user__log-in" href="">Войти</a>
+      </div>
+      <p class="social">
+        <a class="social__link" href="#">Мы в YouTube
+          <svg class="social__svg  social__svg--yb" width="100" height="100">
+            <use xlink:href="img/sprite.svg#yt"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">Мы в Twitter
+          <svg class="social__svg  social__svg--tw" width="100" height="100">
+            <use xlink:href="img/sprite.svg#fb"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">Мы в Facebook
+          <svg class="social__svg  social__svg--fb" width="100" height="100">
+            <use xlink:href="img/sprite.svg#tw"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">Мы в VK
+          <svg class="social__svg  social__svg--vk" width="100" height="100">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">Мы в Instagram
+          <svg class="social__svg  social__svg--inst" width="100" height="100">
+            <use xlink:href="img/sprite.svg#inst"></use>
+          </svg>
+        </a>
+      </p>
+    </div>
+    <section class="intro">
+      <img src="img/logo-codego.svg" alt="Логотип 'Node.js'">
+      <div class="intro__wrap">
+        <h1 class="intro__title">1С:Предприятие 8.3. Основы</h1>
+        <p class="intro__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id. Neque convallis a cras semper auctor neque vitae. Bibendum at varius vel pharetra vel turpis nunc eget lorem.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="about-course">
+      <h2 class="about-course__title">О курсе</h2>
+      <p class="about-course__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id. Neque convallis a cras semper auctor neque vitae. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Sagittis eu volutpat odio facilisis mauris sit. Risus nec feugiat in fermentum posuere urna. Eleifend mi in nulla posuere. Habitant morbi tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio tempor orci dapibus ultrices in. Duis ultricies lacus sed turpis tincidunt id aliquet. Eu scelerisque felis imperdiet proin. Nibh ipsum consequat nisl vel pretium. In nisl nisi scelerisque eu.
+      </p>
+    </section>
+    <section class="lessons">
+      <h2 class="lessons__title">Лекции</h2>
+      <ul class="lessons__list">
+        <li class="lessons__item">
+          <h3 class="lessons__name">Лекция №1. Интро</h3>
+          <span class="lessons__duration">2 часа</span>
+          <div class="lessons__description">
+            <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
+            <ol class="lessons__description-list">
+              <li class="lessons__description-item">Как происходит процесс обучения. Организационные вопросы.</li>
+              <li class="lessons__description-item">Чему мы научимся за время курса.</li>
+              <li class="lessons__description-item">Профессия 1С-разработчик. Задачи, особенности процесса разработки, порог вхождения.</li>
+              <li class="lessons__description-item">
+                Платформа “1С:Предприятие 8.3”:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Возможности платформы;</li>
+                  <li class="lessons__description-sub-item">Конфигурации;</li>
+                  <li class="lessons__description-sub-item">Информационные базы;</li>
+                  <li class="lessons__description-sub-item">Режимы работы “1С:Предприятие”</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                Подготавливаем рабочее окружение:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Установка платформы для обучения;</li>
+                  <li class="lessons__description-sub-item">Создаем первую информационную базу;</li>
+                  <li class="lessons__description-sub-item">Сохраняем конфигурацию в файлы;</li>
+                  <li class="lessons__description-sub-item">Подключаем систему контроля версий;</li>
+                  <li class="lessons__description-sub-item">Выгрузка/загрузка информационной базы.</li>
+                </ul>
+              </li>
+            </ol>
+            <div class="lessons__result">
+              <b class="lessons__sub-title">Результат лекции:</b>
+              <p class="lessons__text">
+                Получили общие сведения о платформе “1С:Предприятие 8.3” и профессии “1С-разработчик”. Вы знаете как настроить рабочее окружение и получить бесплатную версию платформы для обучения. Термины “Конфигурация” и “Информационная база” больше не ставят в тупик.
+              </p>
+            </div>
+          </div>
+          <button class="lessons__btn">Подробнее</button>
+        </li>
+
+        <li class="lessons__item">
+          <h3 class="lessons__name">Лекция №2. Знакомство с платформой</h3>
+          <span class="lessons__duration">2 часа</span>
+          <div class="lessons__description">
+            <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
+            <ol class="lessons__description-list">
+              <li class="lessons__description-item">
+                Базовое администрирование:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Еще раз про режимы работы “1С:Предприятие”;</li>
+                  <li class="lessons__description-sub-item">Варианты сохранение конфигураций;</li>
+                  <li class="lessons__description-sub-item">Выгрузка/Загрузка информационных баз;</li>
+                  <li class="lessons__description-sub-item">Сервисные утилиты;</li>
+                  <li class="lessons__description-sub-item">Создание пользователей, настройки доступа к информационной базе;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                Типы информационных баз:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Файловые информационные базы;</li>
+                  <li class="lessons__description-sub-item">Клиент-серверные;</li>
+                  <li class="lessons__description-sub-item">MS SQL, Postgre, Oracle;</li>
+                  <li class="lessons__description-sub-item">Когда и что выбирать?</li>
+                  <li class="lessons__description-sub-item">Модель лицензирования;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Встроенные пользовательские обработки.</li>
+              <li class="lessons__description-item">
+                Введение разработку под платформу “1С:Предприятие 8.3”:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Обычное приложение;</li>
+                  <li class="lessons__description-sub-item">Управляемое.</li>
+                </ul>
+              </li>
+            </ol>
+            <div class="lessons__result">
+              <b class="lessons__sub-title">Результат лекции:</b>
+              <p class="lessons__text">
+                Вы знаете в каких режимах может работать платформа “1С:Предприятие”. Понимаете, чем отличается клиент-серверный режим работы ИБ от файлового. Знакомы с моделью лицензирования и понимаете, когда следует использовать сервисные утилиты.
+              </p>
+            </div>
+          </div>
+          <button class="lessons__btn">Подробнее</button>
+        </li>
+
+        <li class="lessons__item">
+          <h3 class="lessons__name">Лекция №3. Начинаем программировать</h3>
+          <span class="lessons__duration">2 часа</span>
+          <div class="lessons__description">
+            <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
+            <ol class="lessons__description-list">
+              <li class="lessons__description-item">Программирование, алгоритмы.</li>
+              <li class="lessons__description-item">Линейные алгоритмы.</li>
+              <li class="lessons__description-item">Ветвящиеся алгоритмы.</li>
+              <li class="lessons__description-item">
+                Программирование в 1С:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Типы данных;</li>
+                  <li class="lessons__description-sub-item">Операторы;</li>
+                  <li class="lessons__description-sub-item">Приведение типов;</li>
+                  <li class="lessons__description-sub-item">Переменные;</li>
+                  <li class="lessons__description-sub-item">Условные операторы;</li>
+                  <li class="lessons__description-sub-item">Процедуры;</li>
+                  <li class="lessons__description-sub-item">Функции;</li>
+                  <li class="lessons__description-sub-item">Синтаксический-помощник;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Разбираем практическую задачу.</li>
+            </ol>
+            <div class="lessons__result">
+              <b class="lessons__sub-title">Результат лекции:</b>
+              <p class="lessons__text">
+                Вы имеете представление о встроенном языке программирования. Слова “Алгоритм” или “Процедура” больше не ставят вас в тупик. Вы знаете, где искать ответы и умеете решать простейшие задачи с помощью встроенного языка.
+              </p>
+            </div>
+          </div>
+          <button class="lessons__btn">Подробнее</button>
+        </li>
+
+        <li class="lessons__item">
+          <h3 class="lessons__name">Лекция №4. “Лего” для “1С:Разработчика”</h3>
+          <span class="lessons__duration">2 часа</span>
+          <div class="lessons__description">
+            <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
+            <ol class="lessons__description-list">
+              <li class="lessons__description-item">
+                Отладка. Как искать и исправлять ошибки:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Переход в режим отладки;</li>
+                  <li class="lessons__description-sub-item">Точки останова, построчное выполнение кода;</li>
+                  <li class="lessons__description-sub-item">Вычисление результата на ходу;</li>
+                  <li class="lessons__description-sub-item">Модификация значений переменных во время исполнения;</li>
+                  <li class="lessons__description-sub-item">Стек вызовов;</li>
+                  <li class="lessons__description-sub-item">Полезные приемы отладки;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Из чего строятся конфигурации.</li>
+              <li class="lessons__description-item">
+                Основные объекты метаданных:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Обработки;</li>
+                  <li class="lessons__description-sub-item">Подсистемы;</li>
+                  <li class="lessons__description-sub-item">Модули;</li>
+                  <li class="lessons__description-sub-item">Константы;</li>
+                  <li class="lessons__description-sub-item">Справочники;</li>
+                  <li class="lessons__description-sub-item">Перечисления;</li>
+                  <li class="lessons__description-sub-item">Документы;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Контекст выполнения кода.</li>
+               <li class="lessons__description-item">
+                Продолжаем знакомиться с синтаксисом:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Циклы;</li>
+                  <li class="lessons__description-sub-item">Массивы;</li>
+                  <li class="lessons__description-sub-item">Структуры;</li>
+                  <li class="lessons__description-sub-item">Таблица значений;</li>
+                  <li class="lessons__description-sub-item">Собираем все вместе.</li>
+                </ul>
+              </li>
+            </ol>
+            <div class="lessons__result">
+              <b class="lessons__sub-title">Результат лекции:</b>
+              <p class="lessons__text">
+                Вы знаете как эффективно бороться с ошибками в коде. Умеете выполнять код построчно, вычислять выражения на лету и эффективно перемещаться между несколькими участками кода. Ваш багаж знаний пополнен важной информацией о циклах, структурах. Вы знаете из чего строится конфигурация.
+              </p>
+            </div>
+          </div>
+          <button class="lessons__btn">Подробнее</button>
+        </li>
+
+        <li class="lessons__item">
+          <h3 class="lessons__name">Лекция №5. Проектируем выпускной проект</h3>
+          <span class="lessons__duration">2 часа</span>
+          <div class="lessons__description">
+            <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
+            <ol class="lessons__description-list">
+              <li class="lessons__description-item">
+                “Yet another CRM”:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Определяем задачу;</li>
+                  <li class="lessons__description-sub-item">Обязательный функционал;</li>
+                  <li class="lessons__description-sub-item">Необязательный функционал;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                Разрабатываем структуру конфигурации без программирования:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Справочники;</li>
+                  <li class="lessons__description-sub-item">Документы;</li>
+                  <li class="lessons__description-sub-item">Перечисления;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Добавляем код. Регистрация в ИБ новых пользователей.</li>
+              <li class="lessons__description-item">Взаимодействуем с объектами.</li>
+              <li class="lessons__description-item">Проектирование форм.</li>
+            </ol>
+            <div class="lessons__result">
+              <b class="lessons__sub-title">Результат лекции:</b>
+              <p class="lessons__text">
+                Вы начали работать над реальным проектом, подготовили его структуру, и решили несколько задач с помощью встроенного языка.
+              </p>
+            </div>
+          </div>
+          <button class="lessons__btn">Подробнее</button>
+        </li>
+
+        <li class="lessons__item">
+          <h3 class="lessons__name">Лекция №6. Продолжаем программировать. Интерфейс, документы.</h3>
+          <span class="lessons__duration">2 часа</span>
+          <div class="lessons__description">
+            <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
+            <ol class="lessons__description-list">
+              <li class="lessons__description-item">
+                Упрощаем жизнь пользователей:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Основы асинхронной модели;</li>
+                  <li class="lessons__description-sub-item">Диалоговые окна;</li>
+                  <li class="lessons__description-sub-item">Автоматизируем типовые операции;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                С клиента на сервер и обратно:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Еще раз о контекстах;</li>
+                  <li class="lessons__description-sub-item">Чем больше серверных вызов, тем больше тормозов;</li>
+                  <li class="lessons__description-sub-item">Практика применения контекста;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                Документы:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Когда использовать;</li>
+                  <li class="lessons__description-sub-item">Создание и базовая настройка документа;</li>
+                  <li class="lessons__description-sub-item">Добавление форм;</li>
+                  <li class="lessons__description-sub-item">Модуль документа;</li>
+                  <li class="lessons__description-sub-item">Модуль менеджера документа;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Первое знакомство с регистрами.</li>
+              <li class="lessons__description-item">Пишем процедуру проведения документа.</li>
+            </ol>
+            <div class="lessons__result">
+              <b class="lessons__sub-title">Результат лекции:</b>
+              <p class="lessons__text">
+                Вы разобрались с нюансами программирования пользовательского интерфейса. Понимаете, чем отличается разработка управляемых форм от обычных и написали код проведения документа.
+              </p>
+            </div>
+          </div>
+          <button class="lessons__btn">Подробнее</button>
+        </li>
+
+        <li class="lessons__item">
+          <h3 class="lessons__name">Лекция №7. Регистры и доступ к данным</h3>
+          <span class="lessons__duration">2 часа</span>
+          <div class="lessons__description">
+            <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
+            <ol class="lessons__description-list">
+              <li class="lessons__description-item">
+                Модули. Дробим код.
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Какие бывают модули;</li>
+                  <li class="lessons__description-sub-item">Вызов сервера;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                Регистры сведений:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Когда использовать регистры сведений;</li>
+                  <li class="lessons__description-sub-item">Виртуальный таблицы;</li>
+                  <li class="lessons__description-sub-item">Периодичность;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Пример программирования регистра сведений. Курсы валют.</li>
+              <li class="lessons__description-item">
+                Регистры накопления:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Когда использовать регистры накопления;</li>
+                  <li class="lessons__description-sub-item">Виртуальные таблицы;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Пример программирования регистра накопления. Взаиморасчеты.</li>
+              <li class="lessons__description-item">Еще немного про регистры.</li>
+            </ol>
+            <div class="lessons__result">
+              <b class="lessons__sub-title">Результат лекции:</b>
+              <p class="lessons__text">
+                Регистры сведений и регистры накопления перестали казаться чем-то страшным и непонятным. Вы знаете как работать с ними из встроенного языка и понимаете в каких ситуациях применять определенный тип регистров.
+              </p>
+            </div>
+          </div>
+          <button class="lessons__btn">Подробнее</button>
+        </li>
+
+        <li class="lessons__item">
+          <h3 class="lessons__name">Лекция №8. Язык запросов</h3>
+          <span class="lessons__duration">2 часа</span>
+          <div class="lessons__description">
+            <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
+            <ol class="lessons__description-list">
+              <li class="lessons__description-item">
+                Как правильно получать данные:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Что такое язык запросов;</li>
+                  <li class="lessons__description-sub-item">Какие операции поддерживает;</li>
+                  <li class="lessons__description-sub-item">Отличие от классического SQL;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                Пишем запросы:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Простые запросы;</li>
+                  <li class="lessons__description-sub-item">Условия в запросах;</li>
+                  <li class="lessons__description-sub-item">Агрегатные функции;</li>
+                  <li class="lessons__description-sub-item">Соединение таблиц;</li>
+                  <li class="lessons__description-sub-item">Объединение результатов;</li>
+                  <li class="lessons__description-sub-item">Быстрый расчет итого;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                Практика написания запросов:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Примеры;</li>
+                  <li class="lessons__description-sub-item">Типичные ошибки;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                Производительность:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Факторы, влияющие на скорость выполнения запросов;</li>
+                  <li class="lessons__description-sub-item">Примеры плохих запросов;</li>
+                </ul>
+              </li>
+               <li class="lessons__description-item">Конструктор запросов</li>
+               <li class="lessons__description-item">
+                Запросы из кода:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Объект “Запрос”</li>
+                  <li class="lessons__description-sub-item">Вызов инструмента “Конструктор запросов”</li>
+                  <li class="lessons__description-sub-item">Проверка результата запроса;</li>
+                  <li class="lessons__description-sub-item">Перебор выборки запроса.</li>
+                </ul>
+              </li>
+            </ol>
+            <div class="lessons__result">
+              <b class="lessons__sub-title">Результат лекции:</b>
+              <p class="lessons__text">
+                Вы умеете писать сложные запросы и получать различные наборы данных. Вам известны особенности, из-за которых может снизится скорость выполнения запросов. У вас получается составлять запросы как путем ручного написания, так и с помощью специализированного инструмента.
+              </p>
+            </div>
+          </div>
+          <button class="lessons__btn">Подробнее</button>
+        </li>
+
+        <li class="lessons__item">
+          <h3 class="lessons__name">Лекция №9. Завершение</h3>
+          <span class="lessons__duration">2 часа</span>
+          <div class="lessons__description">
+            <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
+            <ol class="lessons__description-list">
+              <li class="lessons__description-item">
+                Шлифуем проект:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Прогрессивные улучшения;</li>
+                  <li class="lessons__description-sub-item">Оптимизация;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Полезные настройки редактора.</li>
+              <li class="lessons__description-item">
+                Обзор дополнительных технологий платформы 1С:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Обмены данными;</li>
+                  <li class="lessons__description-sub-item">Разработка мобильных приложений;</li>
+                  <li class="lessons__description-sub-item">Разработка HTTP-сервисов;</li>
+                  <li class="lessons__description-sub-item">Конвертация данных;</li>
+                  <li class="lessons__description-sub-item">СКД;</li>
+                  <li class="lessons__description-sub-item">Механизм расширений;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">
+                Автоматизация рутинных действий:
+                <ul class="lessons__description-sub-list">
+                  <li class="lessons__description-sub-item">Скрипты;</li>
+                  <li class="lessons__description-sub-item">OneScript;</li>
+                </ul>
+              </li>
+              <li class="lessons__description-item">Что дальше?</li>
+            </ol>
+            <div class="lessons__result">
+              <b class="lessons__sub-title">Результат лекции:</b>
+              <p class="lessons__text">
+                Вы готовы работать идти работать на начальную позицию “1С-разработчик”. В вашем портфолио появился первый проект, вы освоили основные концепции разработки под платформу “1С:Предприятие” и получили список технологий для дальнейшего изучения.
+              </p>
+            </div>
+          </div>
+          <button class="lessons__btn">Подробнее</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="payment">
+      <h2 class="payment__title">Оплата</h2>
+      <b class="payment__price">*****₽</b>
+      <p class="payment__text">
+        Оплатить курс можно банковскими картами, электронными деньгами, через интернет-банкинг и наличными через терминал. Возможна оплата по безналичному расчёту для корпоративных клиентов. Нажмите «Записаться и оплатить курс», чтобы узнать больше.
+      </p>
+      <ul class="payment__list">
+        <li class="payment__item">
+          <svg class="payment__svg  payment__svg--visa" width="53" height="17">
+            <use xlink:href="img/sprite.svg#visa"></use>
+          </svg>
+        </li>
+        <li class="payment__item">
+          <svg class="payment__svg  payment__svg--mastercard" width="53" height="17">
+            <use xlink:href="img/sprite.svg#mastercard"></use>
+          </svg>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <ul class="page-footer__list">
+      <li class="page-footer__item">
+        <b class="page-footer__name">Разделы:</b>
+        <ul class="page-footer__sublist">
+          <li class="page-footer__sublist-item">
+            <a class="page-footer__link" href="index.html">Главная</a>
+          </li>
+          <li class="page-footer__sublist-item">
+            <a class="page-footer__link" href="#">Как проходят занятия</a>
+          </li>
+          <li class="page-footer__sublist-item">
+            <a class="page-footer__link" href="#">О проекте</a>
+          </li>
+          <li class="page-footer__sublist-item">
+            <a class="page-footer__link" href="#">Лекторы</a>
+          </li>
+          <li class="page-footer__sublist-item">
+            <a class="page-footer__link" href="catalog.html">Курсы</a>
+          </li>
+        </ul>
+      </li>
+      <li class="page-footer__item">
+        <b class="page-footer__name">Наши курсы:</b>
+        <ul class="page-footer__sublist">
+          <li class="page-footer__sublist-item">
+            <a class="page-footer__link" href="#">1С:Предприятие 8.3. Основы</a>
+          </li>
+          <li class="page-footer__sublist-item">
+            <a class="page-footer__link" href="#">1С:Предприятие 8.3. СКД</a>
+          </li>
+          <li class="page-footer__sublist-item">
+            <a class="page-footer__link">Node.js. Основы</a>
+          </li>
+        </ul>
+      </li>
+      <li class="page-footer__item">
+        <b class="page-footer__name">Контакты:</b>
+        <a class="page-footer__tel" href="tel:Номер телефона">Номер телефона</a>
+        <a class="page-footer__email" href="mailto:email">email: email</a>
+        <p class="social">
+          <a class="social__link" href="#">Мы в YouTube
+            <svg class="social__svg  social__svg--yb" width="100" height="100">
+              <use xlink:href="img/sprite.svg#yt"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">Мы в Twitter
+            <svg class="social__svg  social__svg--tw" width="100" height="100">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">Мы в Facebook
+            <svg class="social__svg  social__svg--fb" width="100" height="100">
+              <use xlink:href="img/sprite.svg#tw"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">Мы в VK
+            <svg class="social__svg  social__svg--vk" width="100" height="100">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">Мы в Instagram
+            <svg class="social__svg  social__svg--inst" width="100" height="100">
+              <use xlink:href="img/sprite.svg#inst"></use>
+            </svg>
+          </a>
+        </p>
+      </li>
+    </ul>
+    <a class="page-footer__copyright" href="index.html">
+      <img src="img/logo-codego.svg" alt="Логотип 'CodeGo'">
+      <span>© Copyright 2017 CodeGo</span>
+    </a>
+  </footer>
+</body>
+
+</html>
