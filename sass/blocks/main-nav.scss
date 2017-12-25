@@ -21,6 +21,10 @@
       color: transparentize($sixth-color, .3);
 
       text-decoration: none;
+
+      &:not([href]) {
+        text-decoration: underline;
+      }
     }
   }
 

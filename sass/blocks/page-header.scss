@@ -2,6 +2,8 @@
   color: $sixth-color;
 
   &__wrap {
+    position: relative;
+
     box-sizing: border-box;
     padding-right: 20px;
     padding-bottom: 10px;
@@ -41,7 +43,7 @@
     &__wrap {
       display: flex;
       width: 100%;
-      max-width: 960px;
+      max-width: 1000px;
       margin-right: auto;
       margin-left: auto;
       padding-bottom: 0;
