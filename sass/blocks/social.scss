@@ -10,6 +10,22 @@
   }
 
   &--footer {
-    display: none;
+    position: static;
+
+    display: block;
+  }
+}
+
+
+
+@include MQ(M) {
+  .social {
+    &--footer {
+      display: inline-block;
+      margin-top: 40px;
+      margin-right: 87px;
+
+      vertical-align: top;
+    }
   }
 }

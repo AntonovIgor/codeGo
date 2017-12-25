@@ -1,7 +1,7 @@
 .page-footer {
   padding-top: 40px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
 
   text-align: center;
 
@@ -84,7 +84,10 @@
   &__copyright {
     @include font(18px, 50px);
 
+    position: relative;
+
     display: inline-block;
+    margin-top: 40px;
     margin-bottom: 0;
     padding-left: 50px;
   }
@@ -103,7 +106,6 @@
 
 @include MQ(L) {
   .page-footer {
-
     &__item {
       display: inline-block;
       margin-right: 20px;
