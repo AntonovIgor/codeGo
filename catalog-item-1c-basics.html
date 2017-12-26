@@ -45,6 +45,17 @@
               </li>
             </ul>
           </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="videos.html">Видео</a>
+            <ul class="main-nav__sub-list">
+              <li class="main-nav__sub-item">
+                <a class="main-nav__sub-link" href="master-classes.html">Мастер-классы</a>
+              </li>
+              <li class="main-nav__sub-item">
+                <a class="main-nav__sub-link" href="screencasts.html">Скринкасты</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <div class="user">
@@ -52,29 +63,34 @@
         <a class="user__log-in" href="">Войти</a>
       </div>
       <p class="social">
-        <a class="social__link" href="#">Мы в YouTube
-          <svg class="social__svg  social__svg--yb" width="50" height="50">
+        <a class="social__link" href="#" target="_blank">Мы в YouTube
+          <svg class="social__svg  social__svg--yb" width="45" height="45">
             <use xlink:href="img/sprite.svg#yt"></use>
           </svg>
         </a>
-        <a class="social__link" href="#">Мы в Twitter
-          <svg class="social__svg  social__svg--tw" width="50" height="50">
+        <a class="social__link" href="https://twitter.com/codegoschool" target="_blank">Мы в Twitter
+          <svg class="social__svg  social__svg--tw" width="45" height="45">
             <use xlink:href="img/sprite.svg#fb"></use>
           </svg>
         </a>
-        <a class="social__link" href="#">Мы в Facebook
-          <svg class="social__svg  social__svg--fb" width="50" height="50">
+        <a class="social__link" href="https://fb.me/codegoschool" target="_blank">Мы в Facebook
+          <svg class="social__svg  social__svg--fb" width="45" height="45">
             <use xlink:href="img/sprite.svg#tw"></use>
           </svg>
         </a>
-        <a class="social__link" href="#">Мы в VK
-          <svg class="social__svg  social__svg--vk" width="50" height="50">
+        <a class="social__link" href="https://vk.com/codegoschool" target="_blank">Мы в VK
+          <svg class="social__svg  social__svg--vk" width="45" height="45">
             <use xlink:href="img/sprite.svg#vk"></use>
           </svg>
         </a>
-        <a class="social__link" href="#">Мы в Instagram
-          <svg class="social__svg  social__svg--inst" width="50" height="50">
+        <a class="social__link" href="#" target="_blank">Мы в Instagram
+          <svg class="social__svg  social__svg--inst" width="45" height="45">
             <use xlink:href="img/sprite.svg#inst"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="https://t.me/codegoschool" target="_blank">Мы в Telegram
+          <svg class="social__svg  social__svg--tg" width="45" height="45">
+            <use xlink:href="img/sprite.svg#tg"></use>
           </svg>
         </a>
       </p>
@@ -95,24 +111,29 @@
   <main>
     <section class="about-course">
       <h2 class="about-course__title">О курсе</h2>
-      <p class="about-course__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id. Neque convallis a cras semper auctor neque vitae. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Sagittis eu volutpat odio facilisis mauris sit. Risus nec feugiat in fermentum posuere urna. Eleifend mi in nulla posuere. Habitant morbi tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio tempor orci dapibus ultrices in. Duis ultricies lacus sed turpis tincidunt id aliquet. Eu scelerisque felis imperdiet proin. Nibh ipsum consequat nisl vel pretium. In nisl nisi scelerisque eu.
-      </p>
+      <div class="about-course__wrap">
+        <div class="about-course__author">
+          <img class="about-course__img" src="http://placehold.it/150X150" alt="Лектор">
+          <b class="about-course__name">Имя лектора</b>
+        </div>
+        <p class="about-course__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id. Neque convallis a cras semper auctor neque vitae. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Sagittis eu volutpat odio facilisis mauris sit. Risus nec feugiat in fermentum posuere urna. Eleifend mi in nulla posuere. Habitant morbi tristique senectus et netus et malesuada fames ac. Vel eros donec ac odio tempor orci dapibus ultrices in. Duis ultricies lacus sed turpis tincidunt id aliquet. Eu scelerisque felis imperdiet proin. Nibh ipsum consequat nisl vel pretium. In nisl nisi scelerisque eu.
+        </p>
+      </div>
     </section>
     <section class="lessons">
       <h2 class="lessons__title">Лекции</h2>
       <ul class="lessons__list">
         <li class="lessons__item">
-          <h3 class="lessons__name">Лекция №1. Интро</h3>
-          <span class="lessons__duration">2 часа</span>
-          <div class="lessons__description">
+          <h3 class="lessons__name">№1. Интро</h3>
+          <div class="lessons__description  lessons__description--nojs">
             <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
             <ol class="lessons__description-list">
               <li class="lessons__description-item">Как происходит процесс обучения. Организационные вопросы.</li>
               <li class="lessons__description-item">Чему мы научимся за время курса.</li>
               <li class="lessons__description-item">Профессия 1С-разработчик. Задачи, особенности процесса разработки, порог вхождения.</li>
               <li class="lessons__description-item">
-                Платформа “1С:Предприятие 8.3”:
+                Платформа “1С:Предприятие 8.3”.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Возможности платформы;</li>
                   <li class="lessons__description-sub-item">Конфигурации;</li>
@@ -121,7 +142,7 @@
                 </ul>
               </li>
               <li class="lessons__description-item">
-                Подготавливаем рабочее окружение:
+                Подготавливаем рабочее окружение.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Установка платформы для обучения;</li>
                   <li class="lessons__description-sub-item">Создаем первую информационную базу;</li>
@@ -138,17 +159,16 @@
               </p>
             </div>
           </div>
-          <button class="lessons__btn">Подробнее</button>
+          <button class="btn  lessons__btn">Подробно</button>
         </li>
 
         <li class="lessons__item">
-          <h3 class="lessons__name">Лекция №2. Знакомство с платформой</h3>
-          <span class="lessons__duration">2 часа</span>
-          <div class="lessons__description">
+          <h3 class="lessons__name">№2. Знакомство с платформой</h3>
+          <div class="lessons__description  lessons__description--nojs">
             <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
             <ol class="lessons__description-list">
               <li class="lessons__description-item">
-                Базовое администрирование:
+                Базовое администрирование
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Еще раз про режимы работы “1С:Предприятие”;</li>
                   <li class="lessons__description-sub-item">Варианты сохранение конфигураций;</li>
@@ -158,7 +178,7 @@
                 </ul>
               </li>
               <li class="lessons__description-item">
-                Типы информационных баз:
+                Типы информационных баз.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Файловые информационные базы;</li>
                   <li class="lessons__description-sub-item">Клиент-серверные;</li>
@@ -169,7 +189,7 @@
               </li>
               <li class="lessons__description-item">Встроенные пользовательские обработки.</li>
               <li class="lessons__description-item">
-                Введение разработку под платформу “1С:Предприятие 8.3”:
+                Введение разработку под платформу “1С:Предприятие 8.3”
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Обычное приложение;</li>
                   <li class="lessons__description-sub-item">Управляемое.</li>
@@ -183,20 +203,19 @@
               </p>
             </div>
           </div>
-          <button class="lessons__btn">Подробнее</button>
+          <button class="btn  lessons__btn">Подробно</button>
         </li>
 
         <li class="lessons__item">
-          <h3 class="lessons__name">Лекция №3. Начинаем программировать</h3>
-          <span class="lessons__duration">2 часа</span>
-          <div class="lessons__description">
+          <h3 class="lessons__name">№3. Начинаем программировать</h3>
+          <div class="lessons__description  lessons__description--nojs">
             <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
             <ol class="lessons__description-list">
               <li class="lessons__description-item">Программирование, алгоритмы.</li>
               <li class="lessons__description-item">Линейные алгоритмы.</li>
               <li class="lessons__description-item">Ветвящиеся алгоритмы.</li>
               <li class="lessons__description-item">
-                Программирование в 1С:
+                Программирование в 1С.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Типы данных;</li>
                   <li class="lessons__description-sub-item">Операторы;</li>
@@ -217,17 +236,16 @@
               </p>
             </div>
           </div>
-          <button class="lessons__btn">Подробнее</button>
+          <button class="btn  lessons__btn">Подробно</button>
         </li>
 
         <li class="lessons__item">
-          <h3 class="lessons__name">Лекция №4. “Лего” для “1С:Разработчика”</h3>
-          <span class="lessons__duration">2 часа</span>
-          <div class="lessons__description">
+          <h3 class="lessons__name">№4. “Лего” для “1С:Разработчика”</h3>
+          <div class="lessons__description  lessons__description--nojs">
             <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
             <ol class="lessons__description-list">
               <li class="lessons__description-item">
-                Отладка. Как искать и исправлять ошибки:
+                Отладка. Как искать и исправлять ошибки.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Переход в режим отладки;</li>
                   <li class="lessons__description-sub-item">Точки останова, построчное выполнение кода;</li>
@@ -239,7 +257,7 @@
               </li>
               <li class="lessons__description-item">Из чего строятся конфигурации.</li>
               <li class="lessons__description-item">
-                Основные объекты метаданных:
+                Основные объекты метаданных.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Обработки;</li>
                   <li class="lessons__description-sub-item">Подсистемы;</li>
@@ -252,7 +270,7 @@
               </li>
               <li class="lessons__description-item">Контекст выполнения кода.</li>
                <li class="lessons__description-item">
-                Продолжаем знакомиться с синтаксисом:
+                Продолжаем знакомиться с синтаксисом.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Циклы;</li>
                   <li class="lessons__description-sub-item">Массивы;</li>
@@ -269,17 +287,16 @@
               </p>
             </div>
           </div>
-          <button class="lessons__btn">Подробнее</button>
+          <button class="btn  lessons__btn">Подробно</button>
         </li>
 
         <li class="lessons__item">
-          <h3 class="lessons__name">Лекция №5. Проектируем выпускной проект</h3>
-          <span class="lessons__duration">2 часа</span>
-          <div class="lessons__description">
+          <h3 class="lessons__name">№5. Проектируем выпускной проект</h3>
+          <div class="lessons__description  lessons__description--nojs">
             <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
             <ol class="lessons__description-list">
               <li class="lessons__description-item">
-                “Yet another CRM”:
+                “Yet another CRM”.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Определяем задачу;</li>
                   <li class="lessons__description-sub-item">Обязательный функционал;</li>
@@ -287,7 +304,7 @@
                 </ul>
               </li>
               <li class="lessons__description-item">
-                Разрабатываем структуру конфигурации без программирования:
+                Разрабатываем структуру конфигурации без программирования.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Справочники;</li>
                   <li class="lessons__description-sub-item">Документы;</li>
@@ -305,17 +322,16 @@
               </p>
             </div>
           </div>
-          <button class="lessons__btn">Подробнее</button>
+          <button class="btn  lessons__btn">Подробно</button>
         </li>
 
         <li class="lessons__item">
-          <h3 class="lessons__name">Лекция №6. Продолжаем программировать. Интерфейс, документы.</h3>
-          <span class="lessons__duration">2 часа</span>
-          <div class="lessons__description">
+          <h3 class="lessons__name">№6. Продолжаем программировать. Интерфейс, документы.</h3>
+          <div class="lessons__description  lessons__description--nojs">
             <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
             <ol class="lessons__description-list">
               <li class="lessons__description-item">
-                Упрощаем жизнь пользователей:
+                Упрощаем жизнь пользователей.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Основы асинхронной модели;</li>
                   <li class="lessons__description-sub-item">Диалоговые окна;</li>
@@ -323,7 +339,7 @@
                 </ul>
               </li>
               <li class="lessons__description-item">
-                С клиента на сервер и обратно:
+                С клиента на сервер и обратно.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Еще раз о контекстах;</li>
                   <li class="lessons__description-sub-item">Чем больше серверных вызов, тем больше тормозов;</li>
@@ -331,7 +347,7 @@
                 </ul>
               </li>
               <li class="lessons__description-item">
-                Документы:
+                Документы.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Когда использовать;</li>
                   <li class="lessons__description-sub-item">Создание и базовая настройка документа;</li>
@@ -350,13 +366,12 @@
               </p>
             </div>
           </div>
-          <button class="lessons__btn">Подробнее</button>
+          <button class="btn  lessons__btn">Подробно</button>
         </li>
 
         <li class="lessons__item">
-          <h3 class="lessons__name">Лекция №7. Регистры и доступ к данным</h3>
-          <span class="lessons__duration">2 часа</span>
-          <div class="lessons__description">
+          <h3 class="lessons__name">№7. Регистры и доступ к данным</h3>
+          <div class="lessons__description  lessons__description--nojs">
             <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
             <ol class="lessons__description-list">
               <li class="lessons__description-item">
@@ -367,7 +382,7 @@
                 </ul>
               </li>
               <li class="lessons__description-item">
-                Регистры сведений:
+                Регистры сведений.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Когда использовать регистры сведений;</li>
                   <li class="lessons__description-sub-item">Виртуальный таблицы;</li>
@@ -376,7 +391,7 @@
               </li>
               <li class="lessons__description-item">Пример программирования регистра сведений. Курсы валют.</li>
               <li class="lessons__description-item">
-                Регистры накопления:
+                Регистры накопления.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Когда использовать регистры накопления;</li>
                   <li class="lessons__description-sub-item">Виртуальные таблицы;</li>
@@ -392,17 +407,16 @@
               </p>
             </div>
           </div>
-          <button class="lessons__btn">Подробнее</button>
+          <button class="btn  lessons__btn">Подробно</button>
         </li>
 
         <li class="lessons__item">
-          <h3 class="lessons__name">Лекция №8. Язык запросов</h3>
-          <span class="lessons__duration">2 часа</span>
-          <div class="lessons__description">
+          <h3 class="lessons__name">№8. Язык запросов</h3>
+          <div class="lessons__description  lessons__description--nojs">
             <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
             <ol class="lessons__description-list">
               <li class="lessons__description-item">
-                Как правильно получать данные:
+                Как правильно получать данные.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Что такое язык запросов;</li>
                   <li class="lessons__description-sub-item">Какие операции поддерживает;</li>
@@ -410,7 +424,7 @@
                 </ul>
               </li>
               <li class="lessons__description-item">
-                Пишем запросы:
+                Пишем запросы.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Простые запросы;</li>
                   <li class="lessons__description-sub-item">Условия в запросах;</li>
@@ -421,14 +435,14 @@
                 </ul>
               </li>
               <li class="lessons__description-item">
-                Практика написания запросов:
+                Практика написания запросов.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Примеры;</li>
                   <li class="lessons__description-sub-item">Типичные ошибки;</li>
                 </ul>
               </li>
               <li class="lessons__description-item">
-                Производительность:
+                Производительность.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Факторы, влияющие на скорость выполнения запросов;</li>
                   <li class="lessons__description-sub-item">Примеры плохих запросов;</li>
@@ -436,7 +450,7 @@
               </li>
                <li class="lessons__description-item">Конструктор запросов</li>
                <li class="lessons__description-item">
-                Запросы из кода:
+                Запросы из кода.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Объект “Запрос”</li>
                   <li class="lessons__description-sub-item">Вызов инструмента “Конструктор запросов”</li>
@@ -452,17 +466,16 @@
               </p>
             </div>
           </div>
-          <button class="lessons__btn">Подробнее</button>
+          <button class="btn  lessons__btn">Подробно</button>
         </li>
 
         <li class="lessons__item">
-          <h3 class="lessons__name">Лекция №9. Завершение</h3>
-          <span class="lessons__duration">2 часа</span>
-          <div class="lessons__description">
+          <h3 class="lessons__name">№9. Завершение</h3>
+          <div class="lessons__description  lessons__description--nojs">
             <b class="lessons__sub-title">Рассматриваемые вопросы:</b>
             <ol class="lessons__description-list">
               <li class="lessons__description-item">
-                Шлифуем проект:
+                Шлифуем проект.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Прогрессивные улучшения;</li>
                   <li class="lessons__description-sub-item">Оптимизация;</li>
@@ -470,7 +483,7 @@
               </li>
               <li class="lessons__description-item">Полезные настройки редактора.</li>
               <li class="lessons__description-item">
-                Обзор дополнительных технологий платформы 1С:
+                Обзор дополнительных технологий платформы 1С
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Обмены данными;</li>
                   <li class="lessons__description-sub-item">Разработка мобильных приложений;</li>
@@ -481,7 +494,7 @@
                 </ul>
               </li>
               <li class="lessons__description-item">
-                Автоматизация рутинных действий:
+                Автоматизация рутинных действий.
                 <ul class="lessons__description-sub-list">
                   <li class="lessons__description-sub-item">Скрипты;</li>
                   <li class="lessons__description-sub-item">OneScript;</li>
@@ -496,7 +509,7 @@
               </p>
             </div>
           </div>
-          <button class="lessons__btn">Подробнее</button>
+          <button class="btn  lessons__btn">Подробно</button>
         </li>
       </ul>
     </section>
@@ -528,10 +541,10 @@
         <b class="page-footer__name">Разделы:</b>
         <ul class="page-footer__sub-list">
           <li class="page-footer__sub-item">
-            <a class="page-footer__link">Главная</a>
+            <a class="page-footer__link" href="index.html">Главная</a>
           </li>
           <li class="page-footer__sub-item">
-            <a class="page-footer__link" href="index.html">Как проходят занятия</a>
+            <a class="page-footer__link" href="#">Как проходят занятия</a>
           </li>
           <li class="page-footer__sub-item">
             <a class="page-footer__link" href="#">О проекте</a>
@@ -541,6 +554,9 @@
           </li>
           <li class="page-footer__sub-item">
             <a class="page-footer__link" href="catalog.html">Курсы</a>
+          </li>
+          <li class="page-footer__sub-item">
+            <a class="page-footer__link" href="videos.html">Видео</a>
           </li>
         </ul>
       </li>
@@ -559,35 +575,51 @@
         </ul>
       </li>
       <li class="page-footer__item">
+        <b class="page-footer__name">Наши мастер-классы и скринкасты:</b>
+        <ul class="page-footer__sub-list">
+          <li class="page-footer__sub-item">
+            <a class="page-footer__link" href="master-classes.html">Мастер-классы</a>
+          </li>
+          <li class="page-footer__sub-item">
+            <a class="page-footer__link" href="screencasts.html">Скринкасты</a>
+          </li>
+        </ul>
+      </li>
+      <li class="page-footer__item">
         <b class="page-footer__name">Контакты:</b>
         <a class="page-footer__tel" href="tel:Номер телефона">Номер телефона</a>
         <a class="page-footer__email" href="mailto:email">email: email</a>
       </li>
     </ul>
     <p class="social  social--footer">
-      <a class="social__link" href="#">Мы в YouTube
-        <svg class="social__svg  social__svg--yb" width="50" height="50">
+      <a class="social__link" href="#" target="_blank">Мы в YouTube
+        <svg class="social__svg  social__svg--yb" width="45" height="45">
           <use xlink:href="img/sprite.svg#yt"></use>
         </svg>
       </a>
-      <a class="social__link" href="#">Мы в Twitter
-        <svg class="social__svg  social__svg--tw" width="50" height="50">
+      <a class="social__link" href="https://twitter.com/codegoschool" target="_blank">Мы в Twitter
+        <svg class="social__svg  social__svg--tw" width="45" height="45">
           <use xlink:href="img/sprite.svg#fb"></use>
         </svg>
       </a>
-      <a class="social__link" href="#">Мы в Facebook
-        <svg class="social__svg  social__svg--fb" width="50" height="50">
+      <a class="social__link" href="https://fb.me/codegoschool" target="_blank">Мы в Facebook
+        <svg class="social__svg  social__svg--fb" width="45" height="45">
           <use xlink:href="img/sprite.svg#tw"></use>
         </svg>
       </a>
-      <a class="social__link" href="#">Мы в VK
-        <svg class="social__svg  social__svg--vk" width="50" height="50">
+      <a class="social__link" href="https://vk.com/codegoschool" target="_blank">Мы в VK
+        <svg class="social__svg  social__svg--vk" width="45" height="45">
           <use xlink:href="img/sprite.svg#vk"></use>
         </svg>
       </a>
-      <a class="social__link" href="#">Мы в Instagram
-        <svg class="social__svg  social__svg--inst" width="50" height="50">
+      <a class="social__link" href="#" target="_blank">Мы в Instagram
+        <svg class="social__svg  social__svg--inst" width="45" height="45">
           <use xlink:href="img/sprite.svg#inst"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="https://t.me/codegoschool" target="_blank">Мы в Telegram
+        <svg class="social__svg  social__svg--tg" width="45" height="45">
+          <use xlink:href="img/sprite.svg#tg"></use>
         </svg>
       </a>
     </p>
