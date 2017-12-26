@@ -57,3 +57,11 @@
 
   list-style: none;
 }
+
+@mixin clearfix() {  
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
