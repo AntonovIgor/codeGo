@@ -2,8 +2,9 @@
   @include font(0, 0);
 
   position: absolute;
-  bottom: -75px;
+  bottom: -72.5px;
   right: 20px;
+  z-index: 5;
 
   &__link {
     display: inline-block;
