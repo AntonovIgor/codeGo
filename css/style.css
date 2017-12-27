@@ -1285,6 +1285,23 @@ img {
     max-width: 600px;
   }
 
+  .main-nav__link--more {
+    padding-right: 20px;
+  }
+
+  .main-nav__link--more::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    border: 5px solid #ffffff;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+
   .main-nav__link[href]::after {
     content: "";
     position: absolute;
@@ -1361,6 +1378,16 @@ img {
 
   .main-nav__item--more:hover .main-nav__link {
     color: #000000;
+  }
+
+  .main-nav__item--more:hover .main-nav__link::before {
+    right: 10px;
+    border: 5px solid #000000;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .main-nav__item--more:hover .main-nav__sub-list {
