@@ -358,7 +358,7 @@ img {
 .page-header {
   color: rgba(255, 255, 255, .95);
   background-color: rgba(9, 69, 93, .9);
-  box-shadow: 0 1px 15px #000000;
+  box-shadow: 0 0 25px #000000;
 }
 
 .page-header__wrap {
@@ -498,7 +498,6 @@ img {
 .social {
   font-size: 0;
   line-height: 0;
-  position: static;
   box-sizing: border-box;
   max-width: 1000px;
   margin-top: 25px;
@@ -514,10 +513,10 @@ img {
 }
 
 .social--footer {
-  position: static;
   display: block;
   padding-right: 0;
   padding-left: 0;
+  text-align: center;
 }
 
 .intro {
@@ -824,8 +823,13 @@ img {
 }
 
 .reviews__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 41px;
   margin-top: 0;
   margin-bottom: 50px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -1030,9 +1034,9 @@ img {
 
 .page-footer {
   padding-top: 40px;
-  padding-right: 30px;
-  padding-left: 30px;
   text-align: center;
+  background-color: #073648;
+  box-shadow: 0 1px 15px #000000;
 }
 
 .page-footer__list {
@@ -1040,18 +1044,22 @@ img {
   padding: 0;
   list-style: none;
   padding-bottom: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   text-align: center;
 }
 
 .page-footer__name {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 40px;
   display: inline-block;
   min-height: 40px;
   margin-bottom: 10px;
   vertical-align: top;
   text-align: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .85);
 }
 
 .page-footer__item {
@@ -1108,14 +1116,21 @@ img {
   text-decoration: none;
 }
 
+.page-footer__wrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(153, 153, 153, .3);
+}
+
 .page-footer__copyright {
   font-size: 18px;
   line-height: 50px;
   position: relative;
   display: inline-block;
+  margin: 0;
   margin-top: 40px;
-  margin-bottom: 0;
   padding-left: 50px;
+  color: rgba(255, 255, 255, .7);
 }
 
 .page-footer__link-logo {
@@ -1157,22 +1172,10 @@ img {
     margin-top: 40px;
   }
 
-  .social {
-    position: static;
-    box-sizing: border-box;
-    max-width: 1000px;
-    margin-top: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-    text-align: right;
-  }
-
   .social--footer {
     display: inline-block;
-    margin-top: 40px;
-    margin-right: 87px;
+    margin-top: 0;
+    margin-right: 67px;
     vertical-align: top;
   }
 
@@ -1190,7 +1193,7 @@ img {
   }
 
   .intro__text--main {
-    display: block;
+    margin-top: 0;
   }
 
   .courses__item {
@@ -1242,6 +1245,10 @@ img {
     width: 25%;
     margin-right: 20px;
     margin-bottom: 20px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 0;
   }
 }
 
@@ -1427,8 +1434,8 @@ img {
   .page-footer__item {
     display: inline-block;
     margin-right: 20px;
-    margin-left: 20px;
     margin-bottom: 0;
+    margin-left: 20px;
     vertical-align: top;
   }
 }
