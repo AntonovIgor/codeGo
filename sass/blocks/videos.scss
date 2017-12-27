@@ -1,6 +1,10 @@
 .videos {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+
+  &--main {
+    padding-bottom: 50px;
+  }
 
   &__title {
     @include font(25px, 41px);
