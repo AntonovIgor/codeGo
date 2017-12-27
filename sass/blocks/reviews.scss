@@ -3,8 +3,13 @@
   padding-bottom: 50px;
 
   &__title {
+    @include font-set(700, 25px, 41px);
+
     margin-top: 0;
     margin-bottom: 50px;
+
+    font-family: $font-secondary;
+    text-transform: uppercase;
 
     text-align: center;
   }
