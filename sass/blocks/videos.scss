@@ -25,6 +25,7 @@
   }
 
   &__item {
+    box-sizing: border-box;
     flex-grow: 1;
     width: 300px;
     margin-right: 10px;

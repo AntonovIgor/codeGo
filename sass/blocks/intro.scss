@@ -29,12 +29,20 @@
 
     font-family: $font-secondary;
     text-align: center;
+
+    &--main {
+      display: none;
+    }
   }
 
   &__text {
     @include font(15px, 25px);
 
     margin: 0;
+
+    &--main {
+      margin-top: 50px;
+    }
   }
 
   &__btn {
@@ -43,6 +51,22 @@
 
     &:hover {
       border-color: $sixth-color;
+    }
+  }
+}
+
+@include MQ(M) {
+  .intro {
+    &__title {
+      &--main {
+        display: block;
+      }
+    }
+
+    &__text {
+      &--main {
+        display: block;
+      }
     }
   }
 }

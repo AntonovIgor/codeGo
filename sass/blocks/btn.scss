@@ -21,7 +21,7 @@
   transition: .35s;
 
   &--more {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   &:hover {
@@ -29,5 +29,13 @@
 
     border-color: $third-color;
     background-color: $sixth-color;
+  }
+}
+
+@include MQ(M) {
+  .btn {
+    &--more {
+      margin-top: 40px;
+    }
   }
 }
