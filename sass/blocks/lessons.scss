@@ -1,16 +1,26 @@
 .lessons {
+  @include font(15px, 28px);
+
   box-sizing: border-box;
-  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
   padding-left: 20px;
+  padding-bottom: 50px;
   padding-right: 20px;
 
+  background-color: transparentize($seventh-color, .95);
+  box-shadow: 0 1px 20px transparentize($primary-color, .7);
+
   &__title {
+    @include font-set(700, 25px, 41px);
+
     margin-top: 0;
     margin-bottom: 50px;
+
+    font-family: $font-secondary;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &__list {
@@ -23,24 +33,41 @@
 
   &__item {
     margin-top: 30px;
-    padding-top: 20px;
-    padding-right: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    overflow: hidden;
+
+    border: 1px solid transparentize($seventh-color, .8);
+    border-radius: 5px;
   }
 
   &__name {
+    @include font-set(700, 20px, 30px);
+
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    padding: 20px;
+
+    font-family: $font-secondary;
+    color: transparentize($sixth-color, .2);
+
+    background-color: $eighth-color;
+
+    border-bottom: 1px solid transparentize($seventh-color, .9);
   }
 
   &__sub-title {
+    @include font-set(700, 22px, 32px);
+
     display: block;
     margin-bottom: 10px;
+
+    font-family: font-secondary;
   }
 
   &__description {
     display: none;
+    padding: 20px;
+    margin-bottom: 30px;
 
     &-list {
       padding-left: 20px;
@@ -49,11 +76,26 @@
 
     &-sub-list {
       display: none;
+
+      list-style: none;
     }
 
-    &--nojs {
-      display: block;
+    &-sub-item {
+      position: relative;
+      &::before {
+        @include absolute-pseudo-element;
+        left: -18px;
+        bottom: 50%;
+
+        width: 10px;
+        height: 1px;
+        background-color: $primary-color;
+      }
     }
+
+//    &--nojs {
+//      display: block;
+//    }
   }
 
   &__text {

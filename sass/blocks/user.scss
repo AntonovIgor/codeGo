@@ -4,7 +4,6 @@
 
     display: block;
     min-height: 32px;
-    margin-right: 10px;
     margin-bottom: 18px;
     margin-left: 10px;
     padding-right: 10px;
@@ -47,7 +46,7 @@
     @include font(0, 0);
 
     margin-right: auto;
-    margin-left: 70px;
+    margin-left: 40px;
 
     &__sign-up {
       display: inline-block;
