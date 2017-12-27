@@ -364,9 +364,9 @@ img {
 .page-header__wrap {
   position: relative;
   box-sizing: border-box;
-  padding-right: 20px;
+  padding-right: 10px;
   padding-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
   background-color: #073648;
   box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
@@ -459,7 +459,6 @@ img {
   line-height: 32px;
   display: block;
   min-height: 32px;
-  margin-right: 10px;
   margin-bottom: 18px;
   margin-left: 10px;
   padding-right: 10px;
@@ -561,13 +560,28 @@ img {
 }
 
 .intro__title {
-  margin-top: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  padding-right: 40px;
+  padding-left: 40px;
   font-family: "Roboto Slab", "Georgia", serif;
   text-align: center;
 }
 
 .intro__title--main {
   display: none;
+  margin-bottom: 22px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.intro__title--course {
+  margin-bottom: 22px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .intro__text {
@@ -892,9 +906,14 @@ img {
 }
 
 .about-course__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 41px;
   margin-top: 0;
   margin-bottom: 50px;
+  font-family: "Roboto Slab", "Georgia", serif;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .about-course__author {
@@ -911,23 +930,35 @@ img {
 }
 
 .about-course__text {
+  font-size: 15px;
+  line-height: 25px;
   margin: 0;
+  text-indent: 30px;
 }
 
 .lessons {
+  font-size: 15px;
+  line-height: 28px;
   box-sizing: border-box;
-  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
   padding-left: 20px;
+  padding-bottom: 50px;
   padding-right: 20px;
+  background-color: rgba(9, 69, 93, .05);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, .3);
 }
 
 .lessons__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 41px;
   margin-top: 0;
   margin-bottom: 50px;
+  font-family: "Roboto Slab", "Georgia", serif;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .lessons__list {
@@ -941,24 +972,38 @@ img {
 
 .lessons__item {
   margin-top: 30px;
-  padding-top: 20px;
-  padding-right: 20px;
   padding-bottom: 20px;
-  padding-left: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(9, 69, 93, .2);
+  border-radius: 5px;
 }
 
 .lessons__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+  padding: 20px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  color: rgba(255, 255, 255, .8);
+  background-color: #39add1;
+  border-bottom: 1px solid rgba(9, 69, 93, .1);
 }
 
 .lessons__sub-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
   display: block;
   margin-bottom: 10px;
+  font-family: font-secondary;
 }
 
 .lessons__description {
   display: none;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 .lessons__description-list {
@@ -968,9 +1013,24 @@ img {
 
 .lessons__description-sub-list {
   display: none;
+  list-style: none;
 }
 
-.lessons__description--nojs {
+.lessons__description-sub-item {
+  position: relative;
+}
+
+.lessons__description-sub-item::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  bottom: 50%;
+  width: 10px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.lessons__description--show {
   display: block;
 }
 
@@ -985,25 +1045,30 @@ img {
 
 .payment {
   box-sizing: border-box;
-  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-right: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   padding-left: 20px;
+  background-color: rgba(243, 223, 73, .7);
+  box-shadow: inset 0 5px 25px -10px rgba(0, 0, 0, .5);
 }
 
 .payment__title {
+  display: none;
   margin-top: 0;
   text-align: center;
 }
 
 .payment__price {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
   display: block;
-  margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
+  color: rgba(0, 0, 0, .7);
 }
 
 .payment__text {
@@ -1408,7 +1473,7 @@ img {
     font-size: 0;
     line-height: 0;
     margin-right: auto;
-    margin-left: 70px;
+    margin-left: 40px;
   }
 
   .user__sign-up {
