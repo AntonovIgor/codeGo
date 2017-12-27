@@ -56,6 +56,24 @@
     }
 
     &__link {
+      &--more {
+        padding-right: 20px;
+
+        &::before {
+          @include absolute-pseudo-element;
+
+          top: 50%;
+          right: 5px;
+
+          border: 5px solid $sixth-color;
+          border-right-color: transparent;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+
+          transform: translateY(-20%)
+        }
+      }
+
       &[href] {
         &::after {
           @include absolute-pseudo-element;
@@ -144,6 +162,17 @@
 
           & .main-nav__link {
             color: $primary-color;
+
+            &::before {
+              right: 10px;
+
+              border: 5px solid $primary-color;
+              border-top-color: transparent;
+              border-bottom-color: transparent;
+              border-left-color: transparent;
+
+              transform: translateY(-50%)
+            }
           }
 
           & .main-nav__sub-list {
