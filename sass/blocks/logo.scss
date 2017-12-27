@@ -9,3 +9,9 @@
   color: $sixth-color;
   text-decoration: none;
 }
+
+@include MQ(L) {
+  .logo {
+    margin-left: auto;
+  }
+}

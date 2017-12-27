@@ -1,10 +1,17 @@
 .social {
   @include font(0, 0);
 
-  position: absolute;
-  bottom: -72.5px;
-  right: 20px;
-  z-index: 5;
+
+    position: static;
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    text-align: right;
 
   &__link {
     display: inline-block;
@@ -14,6 +21,8 @@
     position: static;
 
     display: block;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -21,12 +30,31 @@
 
 @include MQ(M) {
   .social {
+    position: static;
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    text-align: right;
+
     &--footer {
       display: inline-block;
       margin-top: 40px;
       margin-right: 87px;
 
       vertical-align: top;
+    }
+
+    &__link {
+      transition: .25s;
+
+      &:hover {
+        opacity: .8;
+      }
     }
   }
 }

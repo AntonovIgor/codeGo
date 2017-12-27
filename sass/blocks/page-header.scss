@@ -1,5 +1,8 @@
 .page-header {
-  color: $sixth-color;
+  color: transparentize($sixth-color, 0.05);
+
+  background-color: transparentize($seventh-color, .1);
+  box-shadow: 0 1px 15px $primary-color;
 
   &__wrap {
     position: relative;
@@ -8,6 +11,9 @@
     padding-right: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
+
+    background-color: $secondary-color;
+    box-shadow: 0 0 10px transparentize($primary-color, .4);
   }
 
   &__toggle {
@@ -19,6 +25,13 @@
     height: 28px;
 
     cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 transparentize($sixth-color, .9),
+                0 -1px 0 transparentize($sixth-color, .9),
+                inset 0 -2px 0 transparentize($primary-color, .7);
 
     &::before {
       @include absolute-pseudo-element;
@@ -43,7 +56,6 @@
     &__wrap {
       display: flex;
       width: 100%;
-      max-width: 1000px;
       margin-right: auto;
       margin-left: auto;
       padding-bottom: 0;

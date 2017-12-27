@@ -1,5 +1,5 @@
 .btn {
-  @include font-set(700, 18px, 30px);
+  @include font-set(700, 18px, 46px);
 
   box-sizing: border-box;
   display: block;
@@ -7,7 +7,8 @@
   min-height: 50px;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 
   color: $sixth-color;
   text-align: center;
@@ -15,12 +16,18 @@
   text-transform: uppercase;
 
   background-color: $third-color;
-  border-width: 0;
-  border-color: transparent;
-
   border-radius: 5px;
+  border: 2px solid $third-color;
+  transition: .35s;
 
   &--more {
     margin-top: 40px;
+  }
+
+  &:hover {
+    color: $third-color;
+
+    border-color: $third-color;
+    background-color: $sixth-color;
   }
 }

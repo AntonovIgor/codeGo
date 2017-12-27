@@ -55,10 +55,55 @@
       max-width: 600px;
     }
 
+    &__link {
+      &[href] {
+        &::after {
+          @include absolute-pseudo-element;
+
+          bottom: 10px;
+          left: 50%;
+
+          width: 0%;
+          height: 2px;
+
+          background-color: $sixth-color;
+          transform: translateX(-50%);
+          transition: .35s;
+        }
+
+        &:not(.main-nav__link--more):hover::after {
+          width: 95%;
+          height: 2px;
+        }
+      }
+
+      &:not([href]) {
+        position: relative;
+
+        text-decoration: none;
+
+        &::after {
+          @include absolute-pseudo-element;
+
+          bottom: 10px;
+          left: 0;
+
+          width: 95%;
+          height: 2px;
+
+          background-color: $sixth-color;
+        }
+      }
+    }
+
     &__sub {
       &-list {
-        display: none;
-        background-color: black;
+        position: absolute;
+        z-index: 10;
+
+        visibility: hidden;
+        opacity: 0;
+        transition-duration: .4s;
       }
 
       &-link {
@@ -68,10 +113,21 @@
         padding-bottom: 10px;
         padding-left: 20px;
 
-        color: $sixth-color;
+        color: $primary-color;
         text-align: left;
+
+        transition-duration: .35s;
+
+        &:hover {
+          background-color: transparentize($secondary-color, .8);
+        }
       }
     }
+
+    &__item:hover &__sub-list {
+    }
+
+
 
     &__item {
       position: relative;
@@ -79,13 +135,29 @@
       flex-grow: 1;
 
       text-align: center;
-    }
 
-    &__item:hover &__sub-list {
-      position: absolute;
-      z-index: 10;
+      transition-duration: .4s;
 
-      display: block;
+      &--more {
+        &:hover {
+          background-color: $sixth-color;
+
+          & .main-nav__link {
+            color: $primary-color;
+          }
+
+          & .main-nav__sub-list {
+            position: absolute;
+            z-index: 10;
+
+            display: block;
+
+            background-color: $sixth-color;
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 }

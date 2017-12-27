@@ -7,8 +7,8 @@
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 100px;
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 50px;
 
   &__img-wrap {
     width: 130px;
@@ -25,16 +25,25 @@
   }
 
   &__title {
+    margin-top: 0;
+
     font-family: $font-secondary;
     text-align: center;
   }
 
   &__text {
+    @include font(15px, 25px);
+
     margin: 0;
   }
 
   &__btn {
     width: 250px;
+    margin-top: 50px;
+
+    &:hover {
+      border-color: $sixth-color;
+    }
   }
 }
 
