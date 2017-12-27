@@ -18,6 +18,12 @@
     @include clear-list;
 
     margin-bottom: 50px;
+
+    &--short {
+      .reviews__item:nth-of-type(n+4) {
+        display: none;
+      }
+    }
   }
 
   &__item {
