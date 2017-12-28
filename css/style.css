@@ -548,6 +548,10 @@ img {
   padding-left: 40px;
 }
 
+.intro__img-wrap--course {
+  width: 250px;
+}
+
 .intro__wrap {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
