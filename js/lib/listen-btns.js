@@ -1,5 +1,8 @@
 const modal = document.querySelector(`.modal`);
-const modalVideo = modal.querySelector(`.modal__video`);
+let modalVideo;
+if (modal) {
+  modalVideo = modal.querySelector(`.modal__video`);
+}
 const overlay = document.querySelector(`.overlay`);
 
 
