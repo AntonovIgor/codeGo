@@ -18,6 +18,9 @@ const svgstore = require('gulp-svgstore');
 const server = require('browser-sync').create();
 const run = require('run-sequence');
 const rollup = require('gulp-better-rollup');
+const babel = require('rollup-plugin-babel');
+const resolve = require('rollup-plugin-node-resolve');
+const commonjs = require(`rollup-plugin-commonjs`);
 const sourcemaps = require('gulp-sourcemaps');
 const ghPages = require('gulp-gh-pages');
 
@@ -59,20 +62,27 @@ gulp.task('style', function() {
   ]);
 });
 
-/*gulp.task('compress', function () {
-  pump([
-    gulp.src('build/js/*.js'),
-    uglify(),
-    rename({suffix: '.min'}),
-    gulp.dest('build/js-min'),
-  ]);
-});*/
-
 gulp.task('scripts', function () {
   return gulp.src('js/main.js')
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(rollup({}, 'iife'))
+    .pipe(rollup({
+      plugins: [
+        resolve({browser: true}),
+        commonjs(),
+        babel({
+          babelrc: false,
+          exclude: 'node_modules/**',
+          presets: [
+            ['env', {modules: false}]
+          ],
+          plugins: [
+            'external-helpers'
+          ],
+          sourceMaps: true
+        })
+      ]
+    }, 'iife'))
     .pipe(sourcemaps.write(''))
     .pipe(gulp.dest('build/js'));
 });
@@ -134,12 +144,6 @@ gulp.task('deploy', function () {
   return gulp.src('build/**/*')
     .pipe(ghPages());
 });
-
-/*gulp.task('assemble', function (callback) {
-  run(
-    callback
-  );
-});*/
 
 gulp.task('build', function (callback) {
   run(

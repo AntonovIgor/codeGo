@@ -11,7 +11,8 @@
   box-shadow: inset 0 5px 25px -10px transparentize($primary-color, .5);
 
   &__title {
-    display: none;
+    @include visually-hidden;
+
     margin-top: 0;
 
     text-align: center;
@@ -21,7 +22,7 @@
     @include font-set(700, 70px, 80px);
 
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     text-align: center;
     color: transparentize($primary-color, .3);
@@ -30,6 +31,7 @@
   &__text {
     box-sizing: border-box;
     max-width: 400px;
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -55,5 +57,26 @@
     vertical-align: top;
 
     background-color: $sixth-color;
+  }
+
+  &__btn {
+    @include font(16px, 46px);
+    width: 278px;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &__seats {
+    @include font(16px, 46px);
+
+    display: block;
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+    text-transform: uppercase;
   }
 }

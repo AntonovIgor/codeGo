@@ -14,24 +14,26 @@
     text-align: center;
   }
 
-  &__list {
-    @include clear-list;
-
-    margin-bottom: 50px;
-
-    &--short {
-      .reviews__item:nth-of-type(n+4) {
-        display: none;
-      }
-    }
-  }
-
   &__item {
     box-sizing: border-box;
     max-width: 580px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
+
+    &:nth-of-type(n+4) {
+      display: none;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    @include clear-list;
+
+    margin-bottom: 50px;
   }
 
   &__link {
@@ -56,6 +58,12 @@
     margin-top: 15px;
 
     font-style: normal;
+  }
+
+  &--show {
+    & .reviews__item:nth-of-type(n+4) {
+      display: block;
+    }
   }
 }
 

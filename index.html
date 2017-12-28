@@ -162,7 +162,7 @@
           </div>
           <h3 class="videos__name">Название видео</h3>
           <span class="videos__duration">Длительность: 11:49</span>
-          <a class="btn  videos__btn" href="#">Смотреть</a>
+          <a class="btn  videos__btn" href="https://www.youtube.com/embed/Ns0zijQJxH4" target="_blank">Смотреть</a>
         </article>
         <article class="videos__item  videos__item--main">
           <div class="videos__img-wrap">
@@ -184,7 +184,7 @@
       <a class="btn  btn--more" href="videos.html">Все видео</a>
     </section>
 
-    <section class="reviews">
+    <section class="reviews  reviews--show">
       <h2 class="reviews__title">Отзывы</h2>
       <ul class="reviews__list  reviews__list--short">
         <li class="reviews__item">
@@ -242,7 +242,7 @@
           </blockquote>
         </li>
       </ul>
-      <a class="btn  btn--more" href="videos.html">Больше отзывов</a>
+      <button class="btn  btn--more  btn--nojs  reviews__btn">Больше отзывов</button>
     </section>
   </main>
 
@@ -343,6 +343,14 @@
       </p>
     </div>
   </footer>
+
+  <div class="modal">
+    <button class="modal__close"></button>
+    <iframe class="modal__video" src="https://www.youtube.com/embed/Ns0zijQJxH4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="overlay"></div>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
