@@ -33,7 +33,10 @@ var clearNojsReviews = function clearNojsReviews() {
 clearNojs();
 
 var modal = document.querySelector(".modal");
-var modalVideo = modal.querySelector(".modal__video");
+var modalVideo = void 0;
+if (modal) {
+  modalVideo = modal.querySelector(".modal__video");
+}
 var overlay = document.querySelector(".overlay");
 
 var lessonBtnsClickHandler = function lessonBtnsClickHandler(evt) {
