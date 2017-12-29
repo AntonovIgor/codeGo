@@ -2,6 +2,7 @@
 'use strict';
 
 var clearNojs = function clearNojs() {
+  clearMojsPageHeader();
   clearNojsLessons();
   clearNojsReviews();
 };
@@ -30,7 +31,24 @@ var clearNojsReviews = function clearNojsReviews() {
   }
 };
 
+var clearMojsPageHeader = function clearMojsPageHeader() {
+  var pageHeader = document.querySelector(".page-header");
+  pageHeader.classList.remove("page-header--nojs");
+
+  var wrap = pageHeader.querySelector(".page-header__wrap");
+  wrap.classList.remove("page-header__wrap--nojs");
+
+  var mainNav = wrap.querySelector(".main-nav");
+  mainNav.classList.remove("main-nav--show");
+
+  var toggle = pageHeader.querySelector(".page-header__toggle");
+  toggle.classList.remove("page-header__toggle--nojs");
+};
+
 clearNojs();
+
+var pageHeader = document.querySelector(".page-header");
+var mainNav = pageHeader.querySelector(".main-nav");
 
 var modal = document.querySelector(".modal");
 var modalVideo = void 0;
@@ -38,6 +56,45 @@ if (modal) {
   modalVideo = modal.querySelector(".modal__video");
 }
 var overlay = document.querySelector(".overlay");
+
+var listenBtns = function listenBtns() {
+  var lessonBtns = document.querySelectorAll(".lessons__btn");
+  if (lessonBtns.length) {
+    Array.prototype.forEach.call(lessonBtns, function (btn) {
+      btn.addEventListener("click", lessonBtnsClickHandler);
+    });
+  }
+
+  var reviewsBtn = document.querySelector(".reviews__btn");
+  if (reviewsBtn) {
+    reviewsBtn.addEventListener("click", reviewsBtnClickHandler);
+  }
+
+  var videosBtns = document.querySelectorAll(".videos__btn");
+  if (videosBtns.length) {
+    Array.prototype.forEach.call(videosBtns, function (btn) {
+      btn.addEventListener("click", videosBtnsClickHandler);
+    });
+  }
+
+  if (modal) {
+    var modalClose = modal.querySelector(".modal__close");
+    modalClose.addEventListener("click", modalCloseClickHandler);
+  }
+
+  var toggle = pageHeader.querySelector(".page-header__toggle");
+  toggle.addEventListener("click", toggleClickHandler);
+};
+
+var toggleClickHandler = function toggleClickHandler(evt) {
+  evt.preventDefault();
+
+  if (mainNav.classList.contains("main-nav--show")) {
+    mainNav.classList.remove("main-nav--show");
+    return;
+  }
+  mainNav.classList.add("main-nav--show");
+};
 
 var lessonBtnsClickHandler = function lessonBtnsClickHandler(evt) {
   evt.preventDefault();
@@ -93,33 +150,6 @@ var videosBtnsClickHandler = function videosBtnsClickHandler(evt) {
   evt.preventDefault();
 
   showModal(evt.target);
-};
-
-var listenBtns = function listenBtns() {
-  var lessonBtns = document.querySelectorAll(".lessons__btn");
-
-  if (lessonBtns.length) {
-    Array.prototype.forEach.call(lessonBtns, function (btn) {
-      btn.addEventListener("click", lessonBtnsClickHandler);
-    });
-  }
-
-  var reviewsBtn = document.querySelector(".reviews__btn");
-  if (reviewsBtn) {
-    reviewsBtn.addEventListener("click", reviewsBtnClickHandler);
-  }
-
-  var videosBtns = document.querySelectorAll(".videos__btn");
-  if (videosBtns.length) {
-    Array.prototype.forEach.call(videosBtns, function (btn) {
-      btn.addEventListener("click", videosBtnsClickHandler);
-    });
-  }
-
-  if (modal) {
-    var modalClose = modal.querySelector(".modal__close");
-    modalClose.addEventListener("click", modalCloseClickHandler);
-  }
 };
 
 listenBtns();

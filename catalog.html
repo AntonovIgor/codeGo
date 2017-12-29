@@ -11,13 +11,13 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__wrap">
+  <header class="page-header  page-header--nojs">
+    <div class="page-header__wrap  page-header__wrap--nojs">
       <a class="logo" href="index.html">
         CodeGo
       </a>
       <button class="page-header__toggle  page-header__toggle--nojs" type="button"></button>
-      <nav class="main-nav  main-nav--nojs">
+      <nav class="main-nav  main-nav--show">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -57,11 +57,15 @@
             </ul>
           </li>
         </ul>
+        <ul class="user">
+          <li class="user__item">
+            <a class="user__sign-up" href="#">Зарегистрироваться</a>
+          </li>
+          <li class="user__item">
+            <a class="user__log-in" href="#">Войти</a>
+          </li>
+        </ul>
       </nav>
-      <div class="user">
-        <a class="user__sign-up" href="">Зарегистрироваться</a>
-        <a class="user__log-in" href="">Войти</a>
-      </div>
     </div>
     <p class="social">
       <a class="social__link" href="#" target="_blank">Мы в YouTube
@@ -113,7 +117,7 @@
         <p class="courses__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id.
         </p>
-        <a class="btn  courses__btn" href="#">Подробнее</a>
+        <a class="btn  courses__btn" href="catalog-item-1c-basics.html">Подробнее</a>
       </article>
       <article class="courses__item">
         <div class="courses__img-wrap">
@@ -123,7 +127,7 @@
         <p class="courses__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id.
         </p>
-        <a class="btn  courses__btn" href="#">Подробнее</a>
+        <a class="btn  courses__btn" href="catalog-item-1c-skd.html">Подробнее</a>
       </article>
       <article class="courses__item">
         <div class="courses__img-wrap">
@@ -133,7 +137,7 @@
         <p class="courses__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id.
         </p>
-        <a class="btn  courses__btn" href="#">Подробнее</a>
+        <a class="btn  courses__btn" href="catalog-item-nodejs.html">Подробнее</a>
       </article>
     </div>
   </main>
@@ -235,6 +239,8 @@
       </p>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
