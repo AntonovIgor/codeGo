@@ -30,7 +30,7 @@
 
   &__item {
     box-sizing: border-box;
-    display: flex;
+    display: block;
     flex-direction: column;
     flex-grow: 1;
     width: 300px;
@@ -59,7 +59,19 @@
   &__img-wrap {
     @include font(0, 0);
 
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: transparentize($seventh-color, .2);
     border-bottom: 1px solid transparentize($secondary-color, .7);
+  }
+
+  &__img {
+    margin-left: 50%;
+
+    width: 70%;
+
+    transform: translateX(-50%);
   }
 
   &__name {
