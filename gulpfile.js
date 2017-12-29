@@ -19,8 +19,6 @@ const server = require('browser-sync').create();
 const run = require('run-sequence');
 const rollup = require('gulp-better-rollup');
 const babel = require('rollup-plugin-babel');
-const resolve = require('rollup-plugin-node-resolve');
-const commonjs = require(`rollup-plugin-commonjs`);
 const sourcemaps = require('gulp-sourcemaps');
 const ghPages = require('gulp-gh-pages');
 
@@ -68,8 +66,6 @@ gulp.task('scripts', function () {
     .pipe(sourcemaps.init())
     .pipe(rollup({
       plugins: [
-        resolve({browser: true}),
-        commonjs(),
         babel({
           babelrc: false,
           exclude: 'node_modules/**',
