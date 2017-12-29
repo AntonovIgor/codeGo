@@ -682,10 +682,7 @@ img {
 
 .courses__item {
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+  display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -719,7 +716,17 @@ img {
 .courses__img-wrap {
   font-size: 0;
   line-height: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(9, 69, 93, .8);
   border-bottom: 1px solid rgba(7, 54, 72, .3);
+}
+
+.courses__img {
+  margin-left: 50%;
+  width: 70%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .courses__name {
