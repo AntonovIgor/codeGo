@@ -1,19 +1,29 @@
 .page-header {
+  padding-top: 50px;
+
   color: transparentize($sixth-color, 0.05);
 
   background-color: transparentize($seventh-color, .1);
   box-shadow: 0 0 25px $primary-color;
 
   &__wrap {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     box-sizing: border-box;
+    width: 100%;
     padding-right: 10px;
-    padding-bottom: 10px;
     padding-left: 10px;
 
     background-color: $secondary-color;
     box-shadow: 0 0 10px transparentize($primary-color, .4);
+
+    &--nojs {
+      position: static;
+      top: auto;
+      left: auto;
+    }
   }
 
   &__toggle {
@@ -48,12 +58,26 @@
 
       transform: translate(-50%, -50%);
     }
+
+    &--nojs {
+      display: none;
+    }
+  }
+
+  &--nojs {
+    padding-top: 0;
   }
 }
 
 @include MQ(L) {
   .page-header {
+    padding-top: 0;
+
     &__wrap {
+      position: static;
+      top: auto;
+      left: auto;
+
       display: flex;
       width: 100%;
       margin-right: auto;

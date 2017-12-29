@@ -1,4 +1,11 @@
 .main-nav {
+  display: none;
+  padding-bottom: 10px;
+
+  &--show {
+    display: block;
+  }
+
   &__list {
     @include clear-list;
   }
@@ -47,17 +54,22 @@
 
 @include MQ(L) {
   .main-nav {
+    display: flex;
+    align-items: flex-start;
+    margin-right: auto;
+    padding-bottom: 0;
+
     &__list {
       @include font(0, 0);
 
       display: flex;
       flex-wrap: wrap;
-      max-width: 600px;
+      max-width: 580px;
     }
 
     &__link {
       &--more {
-        padding-right: 20px;
+        padding-right: 18px;
 
         &::before {
           @include absolute-pseudo-element;
@@ -141,11 +153,6 @@
         }
       }
     }
-
-    &__item:hover &__sub-list {
-    }
-
-
 
     &__item {
       position: relative;

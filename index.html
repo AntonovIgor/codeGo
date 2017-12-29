@@ -11,13 +11,13 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__wrap">
+  <header class="page-header  page-header--nojs">
+    <div class="page-header__wrap  page-header__wrap--nojs">
       <a class="logo">
         CodeGo
       </a>
       <button class="page-header__toggle  page-header__toggle--nojs" type="button"></button>
-      <nav class="main-nav  main-nav--nojs">
+      <nav class="main-nav  main-nav--show">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link">Главная</a>
@@ -57,11 +57,15 @@
             </ul>
           </li>
         </ul>
+        <ul class="user">
+          <li class="user__item">
+            <a class="user__sign-up" href="#">Зарегистрироваться</a>
+          </li>
+          <li class="user__item">
+            <a class="user__log-in" href="#">Войти</a>
+          </li>
+        </ul>
       </nav>
-      <div class="user">
-        <a class="user__sign-up" href="">Зарегистрироваться</a>
-        <a class="user__log-in" href="">Войти</a>
-      </div>
     </div>
     <p class="social">
       <a class="social__link" href="#" target="_blank">Мы в YouTube
@@ -336,7 +340,7 @@
         </a>
       </p>
       <p class="page-footer__copyright">
-        <a class="page-footer__link-logo" href="index.html">
+        <a class="page-footer__link-logo">
           <img src="img/logo-codego.svg" alt="Логотип 'CodeGo'">
         </a>
         © Copyright 2018 CodeGo

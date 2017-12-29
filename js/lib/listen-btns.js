@@ -1,9 +1,53 @@
+const pageHeader = document.querySelector(`.page-header`);
+const mainNav = pageHeader.querySelector(`.main-nav`);
+
 const modal = document.querySelector(`.modal`);
 let modalVideo;
 if (modal) {
   modalVideo = modal.querySelector(`.modal__video`);
 }
 const overlay = document.querySelector(`.overlay`);
+
+
+const listenBtns = () => {
+  const lessonBtns = document.querySelectorAll(`.lessons__btn`);
+  if (lessonBtns.length) {
+    Array.prototype.forEach.call(lessonBtns, ((btn) => {
+      btn.addEventListener(`click`, lessonBtnsClickHandler);
+    }));
+  }
+
+  const reviewsBtn = document.querySelector(`.reviews__btn`);
+  if (reviewsBtn) {
+    reviewsBtn.addEventListener(`click`, reviewsBtnClickHandler);
+  }
+
+  const videosBtns = document.querySelectorAll(`.videos__btn`);
+  if (videosBtns.length) {
+    Array.prototype.forEach.call(videosBtns, ((btn) => {
+      btn.addEventListener(`click`, videosBtnsClickHandler);
+    }));
+  }
+
+  if (modal) {
+    const modalClose = modal.querySelector(`.modal__close`);
+    modalClose.addEventListener(`click`, modalCloseClickHandler);
+  }
+
+  const toggle = pageHeader.querySelector(`.page-header__toggle`);
+  toggle.addEventListener(`click`, toggleClickHandler);
+};
+
+
+const toggleClickHandler = (evt) => {
+  evt.preventDefault();
+
+  if (mainNav.classList.contains(`main-nav--show`)) {
+    mainNav.classList.remove(`main-nav--show`);
+    return;
+  }
+  mainNav.classList.add(`main-nav--show`);
+};
 
 
 const lessonBtnsClickHandler = (evt) => {
@@ -65,34 +109,6 @@ const videosBtnsClickHandler = (evt) => {
   evt.preventDefault();
 
   showModal(evt.target);
-};
-
-
-const listenBtns = () => {
-  const lessonBtns = document.querySelectorAll(`.lessons__btn`);
-
-  if (lessonBtns.length) {
-    Array.prototype.forEach.call(lessonBtns, ((btn) => {
-      btn.addEventListener(`click`, lessonBtnsClickHandler);
-    }));
-  }
-
-  const reviewsBtn = document.querySelector(`.reviews__btn`);
-  if (reviewsBtn) {
-    reviewsBtn.addEventListener(`click`, reviewsBtnClickHandler);
-  }
-
-  const videosBtns = document.querySelectorAll(`.videos__btn`);
-  if (videosBtns.length) {
-    Array.prototype.forEach.call(videosBtns, ((btn) => {
-      btn.addEventListener(`click`, videosBtnsClickHandler);
-    }));
-  }
-
-  if (modal) {
-    const modalClose = modal.querySelector(`.modal__close`);
-    modalClose.addEventListener(`click`, modalCloseClickHandler);
-  }
 };
 
 

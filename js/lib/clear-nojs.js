@@ -1,7 +1,9 @@
 const clearNojs = () => {
+  clearMojsPageHeader();
   clearNojsLessons();
   clearNojsReviews();
 };
+
 
 const clearNojsLessons = () => {
   const lessonItem = document.body.querySelectorAll(`.lessons__item`);
@@ -17,6 +19,7 @@ const clearNojsLessons = () => {
   }
 };
 
+
 const clearNojsReviews = () => {
   const reviews = document.querySelector(`.reviews`);
   if (reviews) {
@@ -25,6 +28,21 @@ const clearNojsReviews = () => {
     const btn = reviews.querySelector(`.btn--nojs`);
     btn.classList.remove(`btn--nojs`);
   }
+};
+
+
+const clearMojsPageHeader = () => {
+  const pageHeader = document.querySelector(`.page-header`);
+  pageHeader.classList.remove(`page-header--nojs`);
+
+  const wrap = pageHeader.querySelector(`.page-header__wrap`);
+  wrap.classList.remove(`page-header__wrap--nojs`);
+
+  const mainNav = wrap.querySelector(`.main-nav`);
+  mainNav.classList.remove(`main-nav--show`);
+
+  const toggle = pageHeader.querySelector(`.page-header__toggle`);
+  toggle.classList.remove(`page-header__toggle--nojs`);
 };
 
 

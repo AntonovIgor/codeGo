@@ -1,4 +1,8 @@
 .user {
+  @include clear-list;
+
+  max-width: 235px;
+
   &__sign-up {
     @include font-set(700, 12px, 32px);
 
@@ -48,18 +52,15 @@
     margin-right: auto;
     margin-left: 40px;
 
-    &__sign-up {
+    &__item {
       display: inline-block;
-      margin-top: 10px;
-      margin-bottom: 10px;
 
       vertical-align: top;
     }
 
-    &__log-in {
-      display: inline-block;
-
-      vertical-align: top;
+    &__sign-up {
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
   }
 }
