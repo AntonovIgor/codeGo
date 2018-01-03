@@ -1,0 +1,112 @@
+.lectors {
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+
+  &__item {
+    box-sizing: border-box;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+
+    border: 1px solid transparentize($secondary-color, .7);
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px transparentize($secondary-color, .5);
+  }
+
+  &__title {
+    @include font-set(700, 20px, 31px);
+
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-family: $font-secondary;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__wrap {
+    @include clearfix;
+  }
+
+  &__img {
+    display: block;
+    width: 50%;
+    min-width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include font-set(700, 16px, 25px);
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-family: $font-secondary;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include font(15px, 25px);
+
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    &--interests {
+      margin-bottom: 0;
+
+      text-indent: 0;
+    }
+  }
+
+  &__link {
+    color: $eighth-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include MQ(L) {
+  .lectors {
+    &__item {
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-bottom: 40px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      @include font(25px, 41px);
+    }
+
+    &__img {
+      float: left;
+      width: 25%;
+      margin-right: 25px;
+      margin-bottom: 0px;
+    }
+
+    &__subtitle {
+      @include font(20px, 31px);
+    }
+
+    &__text {
+      @include font(16px, 25px);
+    }
+  }
+}

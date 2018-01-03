@@ -1,0 +1,54 @@
+.about-lessons {
+  box-sizing: border-box;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+
+  &__title {
+    @include font-set(700, 20px, 31px);
+
+    margin-top: 0;
+
+    font-family: $font-secondary;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    @include font-set(700, 16px, 25px);
+
+    margin-top: 50px;
+    margin-bottom: 15px;
+
+    font-family: $font-secondary;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include font(15px, 25px);
+
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+
+
+@include MQ(L) {
+  .about-lessons {
+    &__title {
+      @include font(25px, 41px);
+    }
+
+    &__subtitle {
+      @include font(20px, 31px);
+    }
+
+    &__text {
+      @include font(16px, 25px);
+    }
+  }
+}

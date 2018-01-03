@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CodeGo | Каталог</title>
+  <title>CodeGo | Как проходят занятия</title>
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/polyfills/svg4everybody.js"></script>
@@ -23,7 +23,7 @@
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="about-lessons.html">Как проходят занятия</a>
+            <a class="main-nav__link">Как проходят занятия</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="about-project.html">О проекте</a>
@@ -32,7 +32,7 @@
             <a class="main-nav__link" href="lectors.html">Лекторы</a>
           </li>
           <li class="main-nav__item  main-nav__item--more">
-            <a class="main-nav__link  main-nav__link--more">Курсы</a>
+            <a class="main-nav__link  main-nav__link--more" href="catalog.html">Курсы</a>
             <ul class="main-nav__sub-list">
               <li class="main-nav__sub-item">
                 <a class="main-nav__sub-link" href="catalog-item-1c-basics.html">1С:Предприятие 8.3. Основы</a>
@@ -103,43 +103,30 @@
       <div class="intro__img-wrap">
         <img src="img/logo-codego.svg" alt="Логотип 'CodeGo'">
       </div>
-      <h1 class="intro__title">Курсы</h1>
+      <h1 class="intro__title">Как проходят занятия?</h1>
     </section>
   </header>
 
   <main>
-    <div class="courses">
-      <article class="courses__item">
-        <div class="courses__img-wrap">
-          <img class="courses__img" src="img/codeGo-1c.png" alt="1C">
-        </div>
-        <h3 class="courses__name">1С:Предприятие 8.3. Основы</h3>
-        <p class="courses__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id.
-        </p>
-        <a class="btn  courses__btn" href="catalog-item-1c-basics.html">Подробнее</a>
-      </article>
-      <article class="courses__item">
-        <div class="courses__img-wrap">
-          <img class="courses__img" src="img/codeGo-1c.png" alt="1C">
-        </div>
-        <h3 class="courses__name">1С:Предприятие 8.3. СКД</h3>
-        <p class="courses__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id.
-        </p>
-        <a class="btn  courses__btn" href="catalog-item-1c-skd.html">Подробнее</a>
-      </article>
-      <article class="courses__item">
-        <div class="courses__img-wrap">
-          <img class="courses__img" src="img/codeGo-nodejs.png" alt="Node.js">
-        </div>
-        <h3 class="courses__name">Node.js. Основы</h3>
-        <p class="courses__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id.
-        </p>
-        <a class="btn  courses__btn" href="catalog-item-nodejs.html">Подробнее</a>
-      </article>
-    </div>
+    <section class="about-lessons">
+      <h2 class="about-lessons__title">Все занятия наших курсов строятся по одной простой схеме:</h2>
+      <h3 class="about-lessons__subtitle">Лекция</h3>
+      <p class="about-lessons__text">
+        Длительность каждой лекции - 1.5 - 2,5 часа. В рамках лекции разбирается теоретический материал и демонстрируется практика. В начале каждой лекции дается краткий обзор домашнего задания. Во процессе лекции работает чат с преподавателем и каждый студент может задать интересующий вопрос. В завершении, преподаватель задает домашнее задание. Видео запись лекции доступна ученику на следующий день после проведения.
+      </p>
+      <h3 class="about-lessons__subtitle">Домашнее задание</h3>
+      <p class="about-lessons__text">
+        Самостоятельная работа. Студент выполняет задачу, озвученную в рамках лекции и отправляет преподавателю на проверку. Все вопросы, возникшие в процессе выполнения могут быть заданы в общей группе курса в Telegram. Справиться с трудностями помогают как сокурсники, так и преподаватели курса.
+      </p>
+      <h3 class="about-lessons__subtitle">Выпускной проект</h3>
+      <p class="about-lessons__text">
+        Все домашние задания строятся вокруг выпускного проекта - полноценного приложения, разрабатываемое в рамках курса. Часть функционала проекта разрабатывается во время лекций. Вторая часть строится вокруг домашних заданий.
+      </p>
+      <h3 class="about-lessons__subtitle">Взаимодействие с преподавателем, текстовые материалы курса</h3>
+      <p class="about-lessons__text">
+        Мы очень любим “Telegram”, поэтому этот мессенджер задействован в процессе обучения. Для каждого потока создается отдельная группа, где студенты могут оперативно взаимодействовать друг с другом и преподавателем. Дополнительные текстовые материалы, полезные ссылки и прочее мы рассылаем в личку.
+      </p>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -151,7 +138,7 @@
             <a class="page-footer__link" href="index.html">Главная</a>
           </li>
           <li class="page-footer__sub-item">
-            <a class="page-footer__link" href="about-lessons.html">Как проходят занятия</a>
+            <a class="page-footer__link">Как проходят занятия</a>
           </li>
           <li class="page-footer__sub-item">
             <a class="page-footer__link" href="about-project.html">О проекте</a>
@@ -160,7 +147,7 @@
             <a class="page-footer__link" href="lectors.html">Лекторы</a>
           </li>
           <li class="page-footer__sub-item">
-            <a class="page-footer__link">Курсы</a>
+            <a class="page-footer__link" href="catalog.html">Курсы</a>
           </li>
           <li class="page-footer__sub-item">
             <a class="page-footer__link" href="videos.html">Видео</a>
@@ -244,4 +231,3 @@
 </body>
 
 </html>
-
