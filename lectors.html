@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CodeGo | Каталог</title>
+  <title>CodeGo | Как проходят занятия</title>
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/polyfills/svg4everybody.js"></script>
@@ -29,10 +29,10 @@
             <a class="main-nav__link" href="about-project.html">О проекте</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="lectors.html">Лекторы</a>
+            <a class="main-nav__link">Лекторы</a>
           </li>
           <li class="main-nav__item  main-nav__item--more">
-            <a class="main-nav__link  main-nav__link--more">Курсы</a>
+            <a class="main-nav__link  main-nav__link--more" href="catalog.html">Курсы</a>
             <ul class="main-nav__sub-list">
               <li class="main-nav__sub-item">
                 <a class="main-nav__sub-link" href="catalog-item-1c-basics.html">1С:Предприятие 8.3. Основы</a>
@@ -103,43 +103,65 @@
       <div class="intro__img-wrap">
         <img src="img/logo-codego.svg" alt="Логотип 'CodeGo'">
       </div>
-      <h1 class="intro__title">Курсы</h1>
+      <h1 class="intro__title">Лекторы</h1>
     </section>
   </header>
 
   <main>
-    <div class="courses">
-      <article class="courses__item">
-        <div class="courses__img-wrap">
-          <img class="courses__img" src="img/codeGo-1c.png" alt="1C">
+    <section class="lectors">
+      <article class="lectors__item">
+        <h2 class="lectors__title">Игорь Антонов</h2>
+        <div class="lectors__wrap">
+          <div class="lectors__author">
+            <img class="lectors__img" src="http://placehold.it/150X150" width="150" height="150" alt="Лектор">
+          </div>
+          <p class="lectors__text">
+            Профессионально разрабатывает программное обеспечение с 2006 года. Работает руководителем отдела разработки программного обеспечения в страховой компании
+            <a class="lectors__link" href="http://dalgaso.ru">АО “ДальЖАСО”</a>.
+          </p>
+          <p class="lectors__text">
+            Автор многочисленных технических статей в журналах
+            <a class="lectors__link" href="http://xakep.ru">“Хакер”</a>,
+            <a class="lectors__link" href="http://samag.ru">“Системный администратор”</a>.
+            С 2016 года работает наставником в
+            <a class="lectors__link" href="http://htmlacademy.ru">HTML Academy</a> на интенсивах по обучению программированию на JavaScript (Базовый, продвинутый) и PHP. Ведет
+            <a class="lectors__link" href="http://iantonov.me">персональный блог</a>,
+            где делится с читателями опытом и электронными версиями журнальных статей.
+          </p>
+          <p class="lectors__text">
+            Курирует локальный митап (г. Хабаровск) для фронтенд-разработчиков -
+            <a class="lectors__link" href="http://hajs.ru">Ha.js</a>.
+          </p>
         </div>
-        <h3 class="courses__name">1С:Предприятие 8.3. Основы</h3>
-        <p class="courses__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id.
+        <h3 class="lectors__subtitle">
+          Профессиональные интересы
+        </h3>
+        <p class="lectors__text  lectors__text--interests">
+          JavaScript (front/back), PHP, 1С:Предприятие 8.3.
         </p>
-        <a class="btn  courses__btn" href="catalog-item-1c-basics.html">Подробнее</a>
       </article>
-      <article class="courses__item">
-        <div class="courses__img-wrap">
-          <img class="courses__img" src="img/codeGo-1c.png" alt="1C">
+
+      <article class="lectors__item">
+        <h2 class="lectors__title">Денис Ткаченко</h2>
+        <div class="lectors__wrap">
+          <div class="lectors__author">
+            <img class="lectors__img" src="http://placehold.it/150X150" width="150" height="150" alt="Лектор">
+          </div>
+          <p class="lectors__text">
+            Специалист по разработке и сопровождению корпоративного программного обеспечения: ведение проекта, защита бюджета, работа с командой, сбор и анализ требований, разработка, тестирование, работа с обратной связью во время опытной эксплуатации и внедрения, передача в эксплуатацию – играющий тренер. Опыт управления отделами автоматизации филиала и общекорпоративных проектов в группе компаний Невада. В настоящий момент в компании РЖД.
+          </p>
+          <p class="lectors__text">
+            Проекты сосредоточены в областях: процессное управление, бюджетирование, дистрибуция, складская и транспортная логистика. Интересуется вопросами: формирования и мотивации проектных команд разработчиков, исполняемых бизнес процессов, имитационного бизнес моделирования.
+          </p>
         </div>
-        <h3 class="courses__name">1С:Предприятие 8.3. СКД</h3>
-        <p class="courses__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id.
+        <h3 class="lectors__subtitle">
+          Профессиональные интересы
+        </h3>
+        <p class="lectors__text  lectors__text--interests">
+          Swift, 1C:Предприятие, ASP .NET Core, postgresql; лоялен к opensource, но работает на маке; не прочь что-нибудь декомпилировать, если предоставляется возможность.
         </p>
-        <a class="btn  courses__btn" href="catalog-item-1c-skd.html">Подробнее</a>
       </article>
-      <article class="courses__item">
-        <div class="courses__img-wrap">
-          <img class="courses__img" src="img/codeGo-nodejs.png" alt="Node.js">
-        </div>
-        <h3 class="courses__name">Node.js. Основы</h3>
-        <p class="courses__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla porttitor massa id.
-        </p>
-        <a class="btn  courses__btn" href="catalog-item-nodejs.html">Подробнее</a>
-      </article>
-    </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -157,10 +179,10 @@
             <a class="page-footer__link" href="about-project.html">О проекте</a>
           </li>
           <li class="page-footer__sub-item">
-            <a class="page-footer__link" href="lectors.html">Лекторы</a>
+            <a class="page-footer__link">Лекторы</a>
           </li>
           <li class="page-footer__sub-item">
-            <a class="page-footer__link">Курсы</a>
+            <a class="page-footer__link" href="catalog.html">Курсы</a>
           </li>
           <li class="page-footer__sub-item">
             <a class="page-footer__link" href="videos.html">Видео</a>

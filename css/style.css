@@ -320,6 +320,7 @@ body {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -1390,6 +1391,163 @@ img {
   opacity: 1;
 }
 
+.about-project {
+  box-sizing: border-box;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+}
+
+.about-project__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 41px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-project__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  text-transform: uppercase;
+}
+
+.about-project__text {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-indent: 30px;
+}
+
+.about-lessons {
+  box-sizing: border-box;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+}
+
+.about-lessons__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  margin-top: 0;
+  font-family: "Roboto Slab", "Georgia", serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-lessons__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  text-transform: uppercase;
+}
+
+.about-lessons__text {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.lectors {
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+}
+
+.lectors__item {
+  box-sizing: border-box;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  border: 1px solid rgba(7, 54, 72, .3);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(7, 54, 72, .5);
+}
+
+.lectors__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 31px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lectors__wrap::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lectors__img {
+  display: block;
+  width: 50%;
+  min-width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.lectors__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  text-transform: uppercase;
+}
+
+.lectors__text {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.lectors__text--interests {
+  margin-bottom: 0;
+  text-indent: 0;
+}
+
+.lectors__link {
+  color: #39add1;
+  text-decoration: none;
+}
+
+.lectors__link:hover {
+  text-decoration: underline;
+}
+
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
@@ -1739,5 +1897,52 @@ img {
 
   .modal__close {
     right: -35px;
+  }
+
+  .about-lessons__title {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .about-lessons__subtitle {
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  .about-lessons__text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .lectors__item {
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-bottom: 40px;
+  }
+
+  .lectors__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .lectors__title {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .lectors__img {
+    float: left;
+    width: 25%;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+
+  .lectors__subtitle {
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  .lectors__text {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
