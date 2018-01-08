@@ -85,6 +85,8 @@ const reviewsBtnClickHandler = (evt) => {
 
 
 const showModal = (element) => {
+  console.log(modal);
+
   modal.classList.add(`modal--show`);
   overlay.classList.add(`overlay--show`);
   modalVideo.src = element.href;
